@@ -1,26 +1,5 @@
 import Ajv from 'ajv';
-import { date, time, datetime, uuid, formatNames, formats } from './formats';
-
-describe('date()', () => {
-  const ajv = new Ajv();
-  ajv.addFormat('date', date);
-  const schema = { type: 'string', format: 'date' };
-
-  test('should return invalid format if the date does not match', () => {
-    ajv.validate(schema, '200-02-29');
-    expect(ajv.errors).not.toBeNull();
-  });
-
-  test('should return valid format for a leap year', () => {
-    ajv.validate(schema, '2016-02-29');
-    expect(ajv.errors).toBeNull();
-  });
-
-  test('should return valid format for a century leap year', () => {
-    ajv.validate(schema, '2000-02-29');
-    expect(ajv.errors).toBeNull();
-  });
-});
+import { time, datetime, uuid, formats } from './formats';
 
 describe('time()', () => {
   const ajv = new Ajv();
@@ -127,7 +106,6 @@ describe('uuid()', () => {
 
 describe('formats', () => {
   test('each key should the right validation function', () => {
-    expect(formats.date).toBe(date);
     expect(formats.time).toBe(time);
     expect(formats['date-time']).toBe(datetime);
     expect(formats.uuid).toBe(uuid);

@@ -16,7 +16,7 @@ npm install @valbo/ajv-strict-formats
 
 ## Usage
 
-Adds **date**, **time**, **date-time** and **uuid** formats to [Ajv](https://github.com/ajv-validator/ajv) that are stricter than the ones from the [ajv-formats](https://github.com/ajv-validator/ajv-formats) package:
+Adds **time**, **date-time** and **uuid** formats to [Ajv](https://github.com/ajv-validator/ajv) that are stricter than the ones from the [ajv-formats](https://github.com/ajv-validator/ajv-formats) package:
 
 ```typescript
 import Ajv from 'ajv';
@@ -35,10 +35,6 @@ import addFormats from '@valbo/ajv-strict-formats';
 const ajv = new Ajv();
 addFormats(ajv, ['date-time', 'uuid']);
 ```
-
-### date format
-
-Same format as the default one. Included in this package so that all the date and time formats are included.
 
 ### time format
 

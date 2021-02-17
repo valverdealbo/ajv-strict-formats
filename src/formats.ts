@@ -5,7 +5,7 @@ function isLeapYear(year: number): boolean {
 const DATE = /^(\d\d\d\d)-(\d\d)-(\d\d)$/;
 const DAYS = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-export function date(str: string): boolean {
+function date(str: string): boolean {
   const matches: string[] | null = DATE.exec(str);
   if (!matches) return false;
   const year: number = +matches[1];
@@ -39,12 +39,11 @@ export function uuid(str: string): boolean {
   return UUID.exec(str) !== null;
 }
 
-export type FormatName = 'date' | 'time' | 'date-time' | 'uuid';
+export type FormatName = 'time' | 'date-time' | 'uuid';
 
 export type Formats = { [K in FormatName]: (str: string) => boolean };
 
 export const formats: Formats = {
-  date,
   time,
   'date-time': datetime,
   uuid,
