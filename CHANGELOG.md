@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/valverdealbo/ajv-strict-formats/compare/v1.0.2...v1.0.3) (2021-03-14)
+
+
+### Bug Fixes
+
+* upgrade ajv from 7.1.0 to 7.1.1 ([e9208d5](https://github.com/valverdealbo/ajv-strict-formats/commit/e9208d58c9e2dd890f133c7d7e1cceb49423b3d4))
+
 ## [1.0.2](https://github.com/valverdealbo/ajv-strict-formats/compare/v1.0.1...v1.0.2) (2021-02-19)
 
 
