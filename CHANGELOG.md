@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/valverdealbo/ajv-strict-formats/compare/v1.0.4...v1.0.5) (2021-04-17)
+
+
+### Bug Fixes
+
+* change ajv dependency to peer dependency ([9492bbf](https://github.com/valverdealbo/ajv-strict-formats/commit/9492bbf102d0be3aac69b49d418b3a2ea89385b2))
+
 ## [1.0.4](https://github.com/valverdealbo/ajv-strict-formats/compare/v1.0.3...v1.0.4) (2021-04-17)
 
 

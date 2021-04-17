@@ -1,6 +1,6 @@
 {
   "name": "@valbo/ajv-strict-formats",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Stricter versions of JSON Schema formats for Ajv",
   "keywords": [
     "ajv",
