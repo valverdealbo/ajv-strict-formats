@@ -1,6 +1,6 @@
 import Ajv from 'ajv';
-import { time, datetime, uuid } from './formats';
-import addFormats from '.';
+import { time, datetime, uuid } from '../src/formats';
+import addFormats from '../src';
 
 describe('addFormats()', () => {
   test('should add all formats', () => {

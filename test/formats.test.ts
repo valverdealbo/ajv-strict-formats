@@ -1,5 +1,5 @@
 import Ajv from 'ajv';
-import { time, datetime, uuid, formats } from './formats';
+import { time, datetime, uuid, formats } from '../src/formats';
 
 describe('time()', () => {
   const ajv = new Ajv();
@@ -26,7 +26,7 @@ describe('time()', () => {
     expect(ajv.errors).toBeNull();
   });
 
-  test('should return valid format for a leap second ', () => {
+  test('should return valid format for a leap second', () => {
     ajv.validate(schema, '23:59:60');
     expect(ajv.errors).toBeNull();
   });
@@ -77,7 +77,7 @@ describe('datetime()', () => {
     expect(ajv.errors).toBeNull();
   });
 
-  test('should return valid format for a leap second ', () => {
+  test('should return valid format for a leap second', () => {
     ajv.validate(schema, '2000-02-29T23:59:60Z');
     expect(ajv.errors).toBeNull();
   });
