@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/valverdealbo/ajv-strict-formats/compare/v1.0.3...v1.0.4) (2021-04-17)
+
+
+### Bug Fixes
+
+* update dependencies, update tools configurations ([d53fff0](https://github.com/valverdealbo/ajv-strict-formats/commit/d53fff07774487ea0e001504c19b1f7bcc051ec6))
+
 ## [1.0.3](https://github.com/valverdealbo/ajv-strict-formats/compare/v1.0.2...v1.0.3) (2021-03-14)
 
 
